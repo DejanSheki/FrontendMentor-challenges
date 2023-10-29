@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  --bright-orange: rgb(227, 136, 38);
+  --dark-cyan: rgb(0, 105, 112);
+  --very-dark-cyan: rgb(0, 66, 65);
+  --transparent-white: rgba(255, 255, 255, 0.75);
+  --very-light-gray: rgb(242, 242, 242);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+article {
+  padding: 3rem;
+}
+
+article:nth-child(1) {
+  background: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+article:nth-child(2) {
+  background: var(--dark-cyan);
+}
+
+article:nth-child(3) {
+  background: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+article h2 {
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+  margin-block: 30px;
+  text-transform: uppercase;
+}
+
+article p {
+  color: var(--transparent-white);
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+article button {
+  margin-top: 75px;
+  background: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+article:nth-child(1) button {
+  color: var(--bright-orange);
+}
+
+article:nth-child(2) button {
+  color: var(--dark-cyan);
+}
+
+article:nth-child(3) button {
+  color: var(--very-dark-cyan);
+}
+
+article button:hover {
+  background: transparent;
+  color: var(--transparent-white);
+}
+
+footer {
+  height: 10vh;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark-cyan);
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 1.5px;
+}
+
+footer a:hover {
+  color: var(--very-dark-cyan);
+}
+
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    height: 100%;
+    padding: 2.5rem 2rem;
+  }
+  article:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+
+  article:nth-child(3) {
+    background: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+  }
+}
