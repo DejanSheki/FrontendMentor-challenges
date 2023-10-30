@@ -15,11 +15,6 @@ Users should be able to:
 
 ![](./images/screenshot.png)
 
-### Links
-
-- Solution URL: [GitHub](https://github.com/DejanSheki/3-column-preview-card-component)
-- Live Site URL: [Github-pages](https://dejansheki.github.io/3-column-preview-card-component/)
-
 ### Built with
 
 - Semantic HTML5 markup

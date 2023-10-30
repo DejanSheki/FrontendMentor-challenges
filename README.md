@@ -1,4 +1,4 @@
-1. 3 column preview card component
+1. 3 Column Preview Card Component
 
 ![](./3-column-preview-card-component-main/images/screenshot.png)
 
