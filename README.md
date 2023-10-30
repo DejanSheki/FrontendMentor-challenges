@@ -1,8 +1,9 @@
-1.# column preview card component
+1. 3 column preview card component
 
 ![](./3-column-preview-card-component-main/images/screenshot.png)
 
-- Live URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/3-column-preview-card-component-main/)
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/3-column-preview-card-component-main)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/3-column-preview-card-component-main/)
 
 ## Author
 
