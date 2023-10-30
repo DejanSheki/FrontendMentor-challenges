@@ -1,0 +1,7 @@
+li {
+  list-style-image: url("./assets/images/icon-list.svg");
+}
+li span {
+  position: relative;
+  top: -5px;
+}
