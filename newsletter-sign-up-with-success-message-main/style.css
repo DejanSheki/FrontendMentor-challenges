@@ -48,6 +48,10 @@ main {
   border-radius: 1.7rem;
 }
 
+.hiden {
+  display: none;
+}
+
 section:nth-child(1) {
   padding: 3rem;
   padding-right: 0rem;
@@ -71,45 +75,51 @@ section:nth-child(1) {
       }
     }
   }
+}
 
-  & form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    margin-top: 3.4rem;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 3.4rem;
+}
 
-    & label {
-      font-size: 0.8rem;
-      color: var(--dark-slate-grey);
-      font-weight: 700;
-      margin-bottom: -9px;
-    }
+label {
+  font-size: 0.8rem;
+  color: var(--dark-slate-grey);
+  font-weight: 700;
+  margin-bottom: -9px;
+  display: flex;
+  justify-content: space-between;
+}
+label span {
+  display: none;
+  color: var(--tomato);
+}
 
-    & input {
-      padding: 1rem;
-      border-radius: 7px;
-      border: 1px solid var(--grey);
-      font-size: 1rem;
-      cursor: pointer;
-      color: var(--grey);
-    }
+input {
+  padding: 1rem;
+  border-radius: 7px;
+  border: 1px solid var(--grey);
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--grey);
+}
 
-    & input[type="email"]:hover {
-      border: 1px solid var(--charcoal-grey);
-      color: var(--charcoal-grey);
-    }
+input[type="email"]:hover {
+  border: 1px solid var(--charcoal-grey);
+  color: var(--charcoal-grey);
+}
 
-    & input[type="submit"] {
-      background: var(--dark-slate-grey);
-      color: var(--white);
-      letter-spacing: 1px;
-      border: none;
+input[type="submit"] {
+  background: var(--dark-slate-grey);
+  color: var(--white);
+  letter-spacing: 1px;
+  border: none;
 
-      &:hover {
-        background: var(--tomato);
-        box-shadow: 0px 4px 14px var(--tomato);
-      }
-    }
+  &:hover {
+    background: var(--tomato);
+    box-shadow: 0px 4px 14px var(--tomato);
   }
 }
 
@@ -161,6 +171,16 @@ section:nth-child(2) {
       box-shadow: 0px 4px 14px var(--tomato);
     }
   }
+}
+
+.error-msg {
+  border: 1px solid var(--tomato);
+  color: var(--tomato);
+  background: rgba(255, 159, 152, 0.644);
+}
+
+.display {
+  display: flex;
 }
 
 footer {
