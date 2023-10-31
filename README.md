@@ -1,6 +1,6 @@
 2. Newsletter Sign Up With Success message
 
-![](./newsletter-sign-up-with-success-message-main/images/screenshot.png)
+![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/newsletter-sign-up-with-success-message-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/newsletter-sign-up-with-success-message-main/)
