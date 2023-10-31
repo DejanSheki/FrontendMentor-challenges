@@ -1,4 +1,4 @@
-2. Newsletter Sign Up With Success message
+2. Newsletter Sign Up With Success Message
 
 ![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)
 
