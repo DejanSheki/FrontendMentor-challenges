@@ -1,3 +1,10 @@
+2. Newsletter Sign Up With Success message
+
+![](./newsletter-sign-up-with-success-message-main/images/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/newsletter-sign-up-with-success-message-main/)
+
 1. 3 Column Preview Card Component
 
 ![](./3-column-preview-card-component-main/images/screenshot.png)
