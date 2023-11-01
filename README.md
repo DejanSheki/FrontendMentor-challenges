@@ -1,3 +1,10 @@
+3. Huddle landing page with alternating feature blocks master
+
+![](./huddle-landing-page-with-alternating-feature-blocks-master/images/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/newsletter-sign-up-with-success-message-main/)
+
 2. Newsletter Sign Up With Success Message
 
 ![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)
