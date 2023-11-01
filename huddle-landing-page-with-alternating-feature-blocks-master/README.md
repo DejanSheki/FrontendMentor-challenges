@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/DejanSheki/huddle-landing-page-with-alternating-feature-blocks-master)
-- Live Site URL: [GitHub pages](https://dejansheki.github.io/huddle-landing-page-with-alternating-feature-blocks-master/)
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/huddle-landing-page-with-alternating-feature-blocks-master)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/huddle-landing-page-with-alternating-feature-blocks-master/)
 
 ### Built with
 
