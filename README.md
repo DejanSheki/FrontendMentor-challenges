@@ -20,7 +20,7 @@
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/interactive-pricing-component-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-pricing-component-main/)
 
-3. Huddle landing page with alternating feature blocks master
+3. Chat app css illustration
 
 ![](./chat-app-css-illustration-master/images/screenshot.png)
 
