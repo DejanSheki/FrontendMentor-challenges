@@ -16,11 +16,6 @@ Users should be able to:
 
 ![](./images/screenshot.png)
 
-### Links
-
-- Solution URL: [GitHub](https://github.com/DejanSheki/interactive-pricing-component-main)
-- Live Site URL: [GitHub pages](https://dejansheki.github.io/interactive-pricing-component-main/)
-
 ## My process
 
 ### Built with
