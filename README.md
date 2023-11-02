@@ -1,17 +1,24 @@
-4. Newsletter Sign Up With Success Message
+5. Newsletter Sign Up With Success Message
 
 ![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/newsletter-sign-up-with-success-message-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/newsletter-sign-up-with-success-message-main/)
 
-3. Interactive rating component
+4. Interactive rating component
 
 ![](./interactive-rating-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/interactive-rating-component-main)
 
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-rating-component-main)
+
+3. Interactive pricing component
+
+![](./interactive-pricing-component-main/images/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/interactive-pricing-component-main)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-pricing-component-main/)
 
 2. Huddle landing page with alternating feature blocks master
 
