@@ -1,11 +1,11 @@
-5. Newsletter Sign Up With Success Message
+6. Newsletter Sign Up With Success Message
 
 ![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/newsletter-sign-up-with-success-message-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/newsletter-sign-up-with-success-message-main/)
 
-4. Interactive rating component
+5. Interactive rating component
 
 ![](./interactive-rating-component-main/images/screenshot.png)
 
@@ -13,12 +13,19 @@
 
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-rating-component-main)
 
-3. Interactive pricing component
+4. Interactive pricing component
 
 ![](./interactive-pricing-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/interactive-pricing-component-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-pricing-component-main/)
+
+3. Huddle landing page with alternating feature blocks master
+
+![](./chat-app-css-illustration-master/images/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/chat-app-css-illustration-master)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/chat-app-css-illustration-master/)
 
 2. Huddle landing page with alternating feature blocks master
 
