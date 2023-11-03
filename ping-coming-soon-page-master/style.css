@@ -34,7 +34,7 @@ header {
   width: 55%;
   padding-inline: 1rem;
 
-  h1 {
+  & h1 {
     font-size: clamp(1.5rem, -0.875rem + 8.333333vw, 2.8rem);
     margin-block: 1.7rem 0.9rem;
     font-weight: 700;
@@ -83,10 +83,10 @@ header {
     display: block;
   }
 
-  input[aria-invalid="false"] {
+  & input[aria-invalid="false"] {
     border: 1px solid var(--pale-blue);
   }
-  input[aria-invalid="true"] {
+  & input[aria-invalid="true"] {
     border: 1px solid var(--light-red);
   }
 
