@@ -50,6 +50,14 @@ header {
 
   & form {
     margin-block: 2rem 4rem;
+
+    & span {
+      display: none;
+      float: left;
+      margin: 0.6rem 0 0 2rem;
+      font-size: 0.7rem;
+      color: var(--light-red);
+    }
   }
 
   & input[type="email"] {
@@ -65,6 +73,10 @@ header {
     }
   }
 
+  .error-message {
+    display: block;
+  }
+
   & input[type="submit"] {
     background: var(--blue);
     color: #fff;
@@ -75,6 +87,13 @@ header {
     border-radius: 2rem;
     width: 30%;
     margin-left: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 8px 0 var(--pale-blue);
+    transition: all 0.5s ease-in;
+
+    &:hover {
+      background: hsla(223, 87%, 63%, 0.7);
+    }
   }
 }
 
@@ -108,10 +127,20 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
+      transition: all 0.5s ease-in;
 
       & a {
         text-decoration: none;
         color: var(--blue);
+      }
+
+      &:hover {
+        background: var(--blue);
+
+        & a {
+          color: #fff;
+        }
       }
     }
   }
