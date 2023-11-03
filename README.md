@@ -1,3 +1,10 @@
+7. Ping coming soon page
+
+![](./ping-coming-soon-page-master/images/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/ping-coming-soon-page-master)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/ping-coming-soon-page-master/)
+
 6. Newsletter Sign Up With Success Message
 
 ![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)

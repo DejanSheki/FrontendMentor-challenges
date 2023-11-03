@@ -24,15 +24,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
   text-align: center;
   margin-top: 3.5rem;
-  width: 800px;
+  width: 55%;
+  padding-inline: 1rem;
 
   h1 {
-    font-size: clamp(1.8rem, -0.875rem + 8.333333vw, 2.8rem);
+    font-size: clamp(1.5rem, -0.875rem + 8.333333vw, 2.8rem);
     margin-block: 1.7rem 0.9rem;
     font-weight: 700;
     color: var(--very-dark-blue);
@@ -61,7 +64,6 @@ header {
   }
 
   & input[type="email"] {
-    border: 1px solid var(--pale-blue);
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
     width: 65%;
@@ -71,10 +73,21 @@ header {
       color: var(--pale-blue);
       opacity: 1;
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .error-message {
     display: block;
+  }
+
+  input[aria-invalid="false"] {
+    border: 1px solid var(--pale-blue);
+  }
+  input[aria-invalid="true"] {
+    border: 1px solid var(--light-red);
   }
 
   & input[type="submit"] {
@@ -94,14 +107,26 @@ header {
     &:hover {
       background: hsla(223, 87%, 63%, 0.7);
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 }
 
 main {
-  width: 800px;
+  max-width: 830px;
+  padding: 0 1rem;
 
   & img {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -147,13 +172,13 @@ footer {
 
   & p {
     color: var(--gray);
-    font-size: 0.8rem;
+    font-size: clamp(0.6rem, -0.875rem + 8.333333vw, 0.8rem);
     margin-block: 2rem 1rem;
   }
 
   & .attribution {
     color: var(--gray);
-    font-size: 0.8rem;
+    font-size: clamp(0.6rem, -0.875rem + 8.333333vw, 0.8rem);
 
     & a {
       text-decoration: none;
