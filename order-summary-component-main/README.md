@@ -12,13 +12,6 @@ Users should be able to:
 
 ![](./images/screenshot.png)
 
-### Links
-
-- Solution URL: https://github.com/DejanSheki/order-summary-component-main.git
-- Live Site URL: https://dejansheki.github.io/order-summary-component-main/
-
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
