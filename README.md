@@ -1,18 +1,18 @@
-7. Ping coming soon page
+8. Ping coming soon page
 
 ![](./ping-coming-soon-page-master/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/ping-coming-soon-page-master)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/ping-coming-soon-page-master/)
 
-6. Newsletter Sign Up With Success Message
+7. Newsletter Sign Up With Success Message
 
 ![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/newsletter-sign-up-with-success-message-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/newsletter-sign-up-with-success-message-main/)
 
-5. Interactive rating component
+6. Interactive rating component
 
 ![](./interactive-rating-component-main/images/screenshot.png)
 
@@ -20,33 +20,40 @@
 
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-rating-component-main)
 
-4. Interactive pricing component
+5. Interactive pricing component
 
 ![](./interactive-pricing-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/interactive-pricing-component-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-pricing-component-main/)
 
-3. Chat app css illustration
+4. Chat app css illustration
 
 ![](./chat-app-css-illustration-master/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/chat-app-css-illustration-master)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/chat-app-css-illustration-master/)
 
-2. Huddle landing page with alternating feature blocks master
+3. Huddle landing page with alternating feature blocks master
 
 ![](./huddle-landing-page-with-alternating-feature-blocks-master/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/huddle-landing-page-with-alternating-feature-blocks-master)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/huddle-landing-page-with-alternating-feature-blocks-master/)
 
-1. 3 Column Preview Card Component
+2. 3 Column Preview Card Component
 
 ![](./3-column-preview-card-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/3-column-preview-card-component-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/3-column-preview-card-component-main/)
+
+1. Order summary component
+
+![](./order-summary-component-main/images/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/order-summary-component-main)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/order-summary-component-main)
 
 ## Author
 
