@@ -24,37 +24,135 @@
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
+  letter-spacing: 1px;
+  background: var(--very-dark-blue);
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
   grid-template-rows: auto;
   place-items: center;
+  place-content: center;
   grid-template-areas:
     "user work play study"
     "user exercise social selfC"
     "footer footer footer footer";
   height: 100vh;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
-  gap: 1rem;
+  gap: 1.5rem;
   background: var(--very-dark-blue);
   padding: 3rem;
 }
 
-.card {
-  border-radius: 1rem;
+img {
+  display: block;
+  width: 100%;
 }
-.card-data {
-  background: var(--dark-blue);
-  margin-top: 2rem;
-  border-radius: 1rem;
+
+.card {
+  border-radius: 0.9rem 0.9rem 1rem 1rem;
+  width: 100%;
 }
 
 .user {
   grid-area: user;
+  background: var(--dark-blue);
+}
+
+.user-info {
+  border-radius: 0.8rem;
+  padding: 1.7rem;
   background: var(--blue);
+
+  & img {
+    width: 40%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+
+  & p {
+    color: var(--pale-blue);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 1.8rem;
+  }
+
+  & h1 {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-block: 0.3rem 2.5rem;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.7rem;
+  padding-bottom: 1rem;
+
+  & ul {
+    list-style: none;
+
+    & li {
+      padding-bottom: 1rem;
+      color: var(--desaturated-blue);
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.card-data {
+  background: var(--dark-blue);
+  margin-top: 2.4rem;
+  border-radius: 0.8rem;
+  padding: 1.7rem;
+  cursor: pointer;
+
+  &:hover {
+    background: hsl(236, 40%, 35%);
+  }
+
+  & h3 {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-block: 1.3rem 1rem;
+  }
+
+  & p {
+    color: var(--pale-blue);
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
+
+.data-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & h2 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  & svg {
+    cursor: pointer;
+
+    &:hover {
+      fill: #fff;
+    }
+  }
 }
 
 .work {
@@ -62,8 +160,8 @@ main {
   background: var(--light-red-work);
   background-image: url("./images/icon-work.svg");
   background-repeat: no-repeat;
-  background-position: top -6px right 10px;
-  background-size: 35%;
+  background-position: top -6px right 14px;
+  background-size: 25%;
 }
 
 .play {
@@ -114,4 +212,11 @@ main {
 .attribution {
   grid-area: footer;
   justify-self: center;
+  color: var(--violet-social);
+  font-size: 0.7rem;
+
+  & a {
+    text-decoration: none;
+    color: var(--soft-blue-play);
+  }
 }
