@@ -148,9 +148,10 @@ img {
       }
     }
   }
-  & .active {
-    color: #fff;
-  }
+}
+
+.active {
+  color: #fff;
 }
 
 .card-data {
