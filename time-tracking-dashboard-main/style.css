@@ -147,10 +147,9 @@ img {
         color: #fff;
       }
     }
-
-    & .active {
-      color: #fff;
-    }
+  }
+  & .active {
+    color: #fff;
   }
 }
 
