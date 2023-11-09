@@ -14,11 +14,8 @@ const selfWeek = document.getElementById("selfWeek");
 
 async function fetchData() {
   const dataFetch = await fetch(
-    "https://github.com/DejanSheki/FrontendMentor-challenges/blob/main/time-tracking-dashboard-main//data.json",
-    {
-      mode: "cors",
-      credentials: "include",
-    }
+    // "https://github.com/DejanSheki/FrontendMentor-challenges/blob/main/time-tracking-dashboard-main//data.json"
+    "./data.json"
   );
   const data = await dataFetch.json();
 
