@@ -1,3 +1,10 @@
+10. Time tracking dashboard
+
+![](./time-tracking-dashboard-main/images/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/time-tracking-dashboard-main)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/time-tracking-dashboard-main/)
+
 9. Ping coming soon page
 
 ![](./ping-coming-soon-page-master/images/screenshot.png)
