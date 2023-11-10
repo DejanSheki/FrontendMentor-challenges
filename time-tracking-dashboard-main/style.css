@@ -153,12 +153,22 @@ img {
   }
 }
 
+@keyframes slideUp {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 2.7rem;
+  }
+}
+
 .card-data {
   background: var(--dark-blue);
-  margin-top: 2.7rem;
+  /* margin-top: 2.7rem; */
   border-radius: 0.8rem;
   padding: 1.9rem;
   cursor: pointer;
+  animation: 1s ease-out 1s slideUp forwards;
 
   @media (max-width: 768px) {
     padding-bottom: 0;
