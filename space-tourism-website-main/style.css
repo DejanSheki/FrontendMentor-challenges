@@ -14,13 +14,16 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
   background-image: url("./assets/home/background-home-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 3rem;
 }
 
 img {
@@ -52,7 +55,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 1.7rem 4rem;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.774227142333984px);
   width: 830px;
@@ -76,6 +79,24 @@ nav {
       font-weight: 700;
     }
   }
+
+  .hover-line,
+  .active-line {
+    width: 0%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5021);
+    position: relative;
+    top: 27px;
+    transition: all ease 0.4s;
+  }
+
+  .active-line {
+    background: var(--white);
+  }
+
+  .active {
+    width: 100%;
+  }
 }
 
 main {
@@ -84,7 +105,7 @@ main {
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
-  padding: 4rem;
+  padding: 0rem 4rem 6rem 4rem;
   justify-content: space-between;
 
   & section {
@@ -96,8 +117,10 @@ main {
 .content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   margin-left: 4rem;
-  padding: 3rem;
+  padding: 0 3rem 4rem 3rem;
 
   & h5 {
     color: var(--light-gray);
@@ -122,14 +145,15 @@ main {
     font-family: var(--barlow-condensed);
     font-size: 1.125rem;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 175%;
     padding-right: 8rem;
+    letter-spacing: 0.03rem;
   }
 }
 
 .oval-container {
   display: flex;
-  padding: 3rem;
+  padding: 0 3rem 4rem 3rem;
   margin-right: 3rem;
   align-items: flex-end;
   justify-content: flex-end;
@@ -142,6 +166,7 @@ main {
     height: 274px;
     border-radius: 50%;
     background: #fff;
+    transition: all ease 0.4s;
 
     & a {
       text-decoration: none;
@@ -152,4 +177,8 @@ main {
       letter-spacing: 2px;
     }
   }
+}
+
+.shadow {
+  box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1036);
 }
