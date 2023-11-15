@@ -3,7 +3,7 @@
 :root {
   --barlow-condensed: "Barlow Condensed", sans-serif;
   --bellefair: "Bellefair", serif;
-  --dark-blue: rgb(11, 13, 23);
+  --dark-blue: hsl(230, 35%, 7%);
   --light-gray: rgb(208, 214, 249);
   --white: rgb(255, 255, 255);
 }
@@ -90,11 +90,12 @@ nav {
     transition: all ease 0.4s;
   }
 
-  .active-line {
-    background: var(--white);
+  .hovered {
+    width: 100%;
   }
 
   .active {
+    background: var(--white);
     width: 100%;
   }
 }
@@ -177,8 +178,118 @@ main {
       letter-spacing: 2px;
     }
   }
+  .shadow {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1036);
+  }
 }
 
-.shadow {
-  box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1036);
+/* Destination */
+
+.destination {
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
+}
+
+.destination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & h5 {
+    color: var(--white);
+    font-family: var(--barlow-condensed);
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    margin-right: 2rem;
+
+    & span {
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  img {
+    width: 67%;
+    margin-top: 6rem;
+    margin-left: 8rem;
+  }
+}
+
+.destination-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 8rem 4rem 6rem;
+
+  & .destination-list {
+    width: 100%;
+  }
+
+  & ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    & li {
+      color: var(--light-gray);
+      font-family: var(--barlow-condensed);
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.16875rem;
+      text-transform: uppercase;
+    }
+  }
+
+  & h1 {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 6.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-block: 3rem 2rem;
+  }
+
+  & p {
+    color: var(--light-gray);
+    font-family: var(--barlow-condensed);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.03rem;
+  }
+
+  & .line-destination {
+    width: 100%;
+    height: 1px;
+    background: #383b4b;
+    margin-block: 3rem 1rem;
+  }
+
+  & .distance-time {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+
+    & .distance p,
+    .time p {
+      color: var(--light-gray);
+      font-family: var(--barlow-condensed);
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 2.362px;
+      text-transform: uppercase;
+    }
+    & .distance h3,
+    .time h3 {
+      color: #fff;
+
+      font-family: var(--bellefair);
+      font-size: 1.75rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
 }
