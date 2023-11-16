@@ -32,7 +32,7 @@
             </li>
             <li>
               <a
-                href="http://127.0.0.1:5500/space-tourism-website-main/page/destination.html"
+                href="http://127.0.0.1:5500/space-tourism-website-main/pages/destination.html"
                 ><span>01 </span> Destination</a
               >
               <div class="hover-line"></div>
@@ -51,52 +51,35 @@
       <main>
         <section class="destination-container">
           <h5><span>01</span> Pick your destination</h5>
-          <img src="../assets/destination/image-moon.webp" alt="Moon" />
+          <div class="destination-image"></div>
+          <!-- <img src="../assets/destination/image-moon.webp" alt="Moon" /> -->
         </section>
         <section class="destination-content">
           <div class="destination-list">
             <ul>
               <li>
                 Moon
-                <div class="active-line"></div>
+                <div class="underline underline-active"></div>
               </li>
               <li>
                 Mars
-                <div class="active-line"></div>
+                <div class="underline"></div>
               </li>
               <li>
                 Europa
-                <div class="active-line"></div>
+                <div class="underline"></div>
               </li>
               <li>
                 Titan
-                <div class="active-line"></div>
+                <div class="underline"></div>
               </li>
             </ul>
           </div>
-          <div>
-            <h1>Moon</h1>
-            <p>
-              See our planet as you've never seen it before. A perfect relaxing
-              trip away to help regain perspective and come back refreshed.
-              While you're there, take in some history by visiting the Luna 2
-              and Apollo 11 landing sites.
-            </p>
-          </div>
-          <div class="line-destination"></div>
-          <div class="distance-time">
-            <div class="distance">
-              <p>AVG. DISTANCE</p>
-              <h3>384,400 km</h3>
-            </div>
-            <div class="time">
-              <p>Est. travel time</p>
-              <h3>3 days</h3>
-            </div>
-          </div>
+          <div class="destination-description"></div>
         </section>
       </main>
     </div>
     <script src="../script/index.js"></script>
+    <script src="../script/destination.js"></script>
   </body>
 </html>

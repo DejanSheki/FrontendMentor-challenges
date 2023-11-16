@@ -111,7 +111,7 @@ main {
 
   & section {
     flex: 1 0 40%;
-    height: 100%;
+    min-height: 100%;
   }
 }
 
@@ -189,6 +189,15 @@ main {
   background-image: url("./assets/destination/background-destination-desktop.jpg");
 }
 
+@keyframes opacityy {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .destination-container {
   display: flex;
   align-items: center;
@@ -214,6 +223,7 @@ main {
     width: 67%;
     margin-top: 6rem;
     margin-left: 8rem;
+    animation: ease 3s opacityy forwards;
   }
 }
 
@@ -239,64 +249,77 @@ main {
         font-weight: 400;
         letter-spacing: 0.16875rem;
         text-transform: uppercase;
+        cursor: pointer;
 
-        & .active-line {
-          width: 100%;
+        & .underline {
+          width: 0%;
           height: 3px;
           background: var(--white);
           margin-top: 10px;
+        }
+
+        & .underline-active {
+          width: 100%;
         }
       }
     }
   }
 
-  & h1 {
-    color: var(--white);
-    font-family: var(--bellefair);
-    font-size: 6.25rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-block: 2rem 1rem;
-  }
+  .destination-description {
+    min-height: 430px;
 
-  & p {
-    color: var(--light-gray);
-    font-family: var(--barlow-condensed);
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 2rem;
-    letter-spacing: 0.03rem;
-  }
+    & h1 {
+      color: var(--white);
+      font-family: var(--bellefair);
+      font-size: 6.25rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-block: 2rem 1rem;
+      animation: ease 3s opacityy forwards;
+    }
 
-  & .line-destination {
-    width: 100%;
-    height: 1px;
-    background: #383b4b;
-    margin-block: 3rem 1rem;
-  }
-
-  & .distance-time {
-    display: flex;
-    width: 100%;
-    gap: 3rem;
-
-    & .distance p,
-    .time p {
+    & p {
       color: var(--light-gray);
       font-family: var(--barlow-condensed);
-      font-size: 0.875rem;
+      font-size: 1.125rem;
       font-weight: 400;
-      letter-spacing: 2.362px;
-      text-transform: uppercase;
+      line-height: 2rem;
+      letter-spacing: 0.03rem;
+      animation: ease 3s opacityy forwards;
     }
-    & .distance h3,
-    .time h3 {
-      color: #fff;
 
-      font-family: var(--bellefair);
-      font-size: 1.75rem;
-      font-weight: 400;
-      text-transform: uppercase;
+    & .line-destination {
+      width: 100%;
+      height: 1px;
+      background: #383b4b;
+      margin-block: 3rem 1rem;
+      animation: ease 3s opacityy forwards;
+    }
+
+    & .distance-time {
+      display: flex;
+      width: 100%;
+      gap: 3rem;
+      animation: ease 3s opacityy forwards;
+
+      & .distance p,
+      .time p {
+        color: var(--light-gray);
+        font-family: var(--barlow-condensed);
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: 2.362px;
+        text-transform: uppercase;
+      }
+      & .distance h3,
+      .time h3 {
+        color: #fff;
+
+        font-family: var(--bellefair);
+        font-size: 1.75rem;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
     }
   }
 }
