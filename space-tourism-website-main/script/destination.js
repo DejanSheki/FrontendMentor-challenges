@@ -80,6 +80,7 @@ async function createContent(myDestination) {
 
             const image = new Image();
             image.src = element.images.webp;
+            image.alt = element.name;
             destinationContainer.appendChild(image);
         }
     });
