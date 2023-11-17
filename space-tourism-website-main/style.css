@@ -231,7 +231,7 @@ main {
     width: 67%;
     margin-top: 6rem;
     margin-left: 8rem;
-    animation: ease 3s opacityAnim forwards, planetRotation 100s infinite linear;
+    animation: ease 3s opacityAnim forwards, planetRotation 200s infinite linear;
   }
 }
 
@@ -269,6 +269,10 @@ main {
         & .underline-active {
           width: 100%;
         }
+      }
+
+      & .li-active {
+        color: var(--white);
       }
     }
   }

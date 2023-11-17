@@ -40,7 +40,10 @@ function createMoon(myData) {
 
 destinationsNav.forEach(navElement => {
     navElement.addEventListener('click', ({ target }) => {
-        for (const item of destinationsNav) item.firstElementChild.classList.toggle("underline-active", target === item);
+        for (const item of destinationsNav) {
+            item.firstElementChild.classList.toggle("underline-active", target === item);
+            item.classList.toggle('li-active', target === item);
+        }
         const myDestination = target.innerText.toUpperCase();
         createContent(myDestination);
     });
