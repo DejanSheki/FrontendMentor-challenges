@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
 
 :root {
+  --barlow: "Barlow", sans-serif;
   --barlow-condensed: "Barlow Condensed", sans-serif;
   --bellefair: "Bellefair", serif;
   --dark-blue: hsl(230, 35%, 7%);
@@ -106,14 +107,7 @@ main {
   height: 90vh;
   margin: 0 auto;
   display: flex;
-  align-items: flex-end;
   padding: 0rem 4rem 6rem 4rem;
-  justify-content: space-between;
-
-  & section {
-    flex: 1 0 40%;
-    min-height: 100%;
-  }
 }
 
 .content {
@@ -121,6 +115,8 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  flex: 1 0 40%;
+  min-height: 100%;
   margin-left: 4rem;
   padding: 0 3rem 4rem 3rem;
 
@@ -144,7 +140,7 @@ main {
 
   & p {
     color: var(--light-gray);
-    font-family: var(--barlow-condensed);
+    font-family: var(--barlow);
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 175%;
@@ -159,6 +155,8 @@ main {
   margin-right: 3rem;
   align-items: flex-end;
   justify-content: flex-end;
+  flex: 1 0 40%;
+  min-height: 100%;
 
   & .oval {
     display: flex;
@@ -212,6 +210,8 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex: 1 0 40%;
+  min-height: 100%;
 
   & h5 {
     color: var(--white);
@@ -220,7 +220,7 @@ main {
     font-weight: 400;
     letter-spacing: 4.725px;
     text-transform: uppercase;
-    margin-right: 2rem;
+    margin-right: 4rem;
 
     & span {
       font-weight: 700;
@@ -229,7 +229,7 @@ main {
   }
 
   img {
-    width: 67%;
+    width: 76%;
     margin-top: 6rem;
     margin-left: 8rem;
     animation: ease 3s opacityAnim forwards, planetRotation 200s infinite linear;
@@ -242,6 +242,8 @@ main {
   align-items: center;
   justify-content: flex-end;
   padding: 0 8rem 4rem 6rem;
+  flex: 1 0 40%;
+  min-height: 100%;
 
   & .destination-list {
     width: 100%;
@@ -265,10 +267,17 @@ main {
           height: 3px;
           background: var(--white);
           margin-top: 10px;
+          transition: all 0.5s ease;
+        }
+
+        & .underline-hover {
+          width: 100%;
+          opacity: 0.5;
         }
 
         & .underline-active {
           width: 100%;
+          opacity: 1;
         }
       }
 
@@ -279,8 +288,6 @@ main {
   }
 
   .destination-description {
-    min-height: 430px;
-
     & h1 {
       color: var(--white);
       font-family: var(--bellefair);
@@ -291,9 +298,13 @@ main {
       animation: ease 3s opacityAnim forwards;
     }
 
+    & .p-height {
+      min-height: 160px;
+    }
+
     & p {
       color: var(--light-gray);
-      font-family: var(--barlow-condensed);
+      font-family: var(--barlow);
       font-size: 1.125rem;
       font-weight: 400;
       line-height: 2rem;
@@ -339,6 +350,94 @@ main {
 
 /* Crew */
 
+.crew-main {
+  padding-bottom: 0;
+}
+
 .crew {
   background-image: url("./assets/crew/background-crew-desktop.jpg");
+  padding-bottom: 0;
+}
+
+.crew-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-inline: 6rem 0;
+  flex: 1 0 40%;
+  min-height: 100%;
+  margin-left: 1rem;
+
+  & h5 {
+    color: var(--white);
+    font-family: var(--barlow-condensed);
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.29531rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    & span {
+      font-weight: 700;
+      opacity: 0.25;
+    }
+  }
+
+  & h2 {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  & h1 {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-block: 1.2rem 2.5rem;
+  }
+
+  & p {
+    color: var(--light-gray);
+    font-family: var(--barlow);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    max-width: 27.75rem;
+    min-height: 160px;
+  }
+
+  & ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    & li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      color: var(--white);
+      background: var(--white);
+      cursor: pointer;
+      opacity: 0.174363;
+      transition: all 0.4s ease-in;
+    }
+    & :hover {
+      opacity: 0.500094;
+    }
+  }
+}
+
+.crew-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 0 0 40%;
+  min-height: 100%;
 }

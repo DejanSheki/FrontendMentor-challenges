@@ -2,55 +2,60 @@ const destinationsNav = document.querySelectorAll('.destination-list li');
 const destinationContent = document.querySelector('.destination-description');
 const destinationContainer = document.querySelector('.destination-image');
 
-async function fetchData() {
-    const data = await fetch('../data.json');
-    const myData = await data.json();
+// async function fetchData() {
+//     const data = await fetch('../data.json');
+//     const myData = await data.json();
 
-    createMoon(myData);
-}
+//     createMoon(myData);
+// }
 
-fetchData();
+// fetchData();
 
-function createMoon(myData) {
-    console.log(myData.destinations[0]);
-    const div = document.createElement('div');
-    div.innerHTML = `
-    <div>
-        <h1>${myData.destinations[0].name}</h1>
-        <p>${myData.destinations[0].description}</p>
-    </div>
-    <div class="line-destination"></div>
-    <div class="distance-time">
-        <div class="distance">
-            <p>AVG. DISTANCE</p>
-            <h3>${myData.destinations[0].distance}</h3>
-        </div>
-    <div class="time">
-        <p>Est. travel time</p>
-        <h3>${myData.destinations[0].travel}</h3>
-    </div>
-    `;
-    destinationContent.appendChild(div);
+// function createMoon(myData) {
+//     console.log(myData.destinations[0]);
+//     const div = document.createElement('div');
+//     div.innerHTML = `
+//     <div>
+//         <h1>${myData.destinations[0].name}</h1>
+//         <p>${myData.destinations[0].description}</p>
+//     </div>
+//     <div class="line-destination"></div>
+//     <div class="distance-time">
+//         <div class="distance">
+//             <p>AVG. DISTANCE</p>
+//             <h3>${myData.destinations[0].distance}</h3>
+//         </div>
+//     <div class="time">
+//         <p>Est. travel time</p>
+//         <h3>${myData.destinations[0].travel}</h3>
+//     </div>
+//     `;
+//     destinationContent.appendChild(div);
 
-    const image = new Image();
-    image.src = myData.destinations[0].images.webp;
-    destinationContainer.appendChild(image);
-}
+//     const image = new Image();
+//     image.src = myData.destinations[0].images.webp;
+//     destinationContainer.appendChild(image);
+// }
 
 
 destinationsNav.forEach(navElement => {
     navElement.addEventListener('click', ({ target }) => {
         for (const item of destinationsNav) {
-            item.firstElementChild.classList.toggle("underline-active", target === item);
+            item.firstElementChild.classList.toggle('underline-active', target === item);
             item.classList.toggle('li-active', target === item);
         }
         const myDestination = target.innerText.toUpperCase();
         createContent(myDestination);
     });
+    navElement.addEventListener('mouseenter', (e) => {
+        e.target.firstElementChild.classList.add('underline-hover');
+    });
+    navElement.addEventListener('mouseleave', (e) => {
+        e.target.firstElementChild.classList.remove('underline-hover');
+    });
 });
 
-
-async function createContent(myDestination) {
+async function createContent(myDestination = 'MOON') {
     const data = await fetch('../data.json');
     const destinations = await data.json();
     const myDestinations = await destinations.destinations;
@@ -63,7 +68,7 @@ async function createContent(myDestination) {
             div.innerHTML = `
             <div>
                 <h1>${element.name}</h1>
-                <p>${element.description}</p>
+                <p class="p-height">${element.description}</p>
             </div>
             <div class="line-destination"></div>
             <div class="distance-time">
@@ -85,3 +90,4 @@ async function createContent(myDestination) {
         }
     });
 }
+createContent();
