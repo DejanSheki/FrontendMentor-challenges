@@ -431,6 +431,9 @@ main {
     & :hover {
       opacity: 0.500094;
     }
+    & .li-active {
+      opacity: 1;
+    }
   }
 }
 

@@ -31,3 +31,11 @@ crewList.forEach(item => {
         fetchData(crewDesc);
     });
 });
+
+crewList.forEach(navElement => {
+    navElement.addEventListener('click', ({ target }) => {
+        for (const item of crewList) {
+            item.classList.toggle('li-active', target === item);
+        }
+    });
+});
