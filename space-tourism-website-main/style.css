@@ -364,7 +364,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   padding-inline: 6rem 0;
-  flex: 1 0 40%;
+  flex: 1 0 55%;
   min-height: 100%;
   margin-left: 1rem;
 
@@ -441,6 +441,31 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex: 0 0 40%;
   min-height: 100%;
+  flex: 0 1 40%;
+}
+
+/* technology */
+
+.technology {
+  background-image: url("./assets/technology/background-technology-desktop.jpg");
+}
+
+.technology-main {
+  max-width: 1440px;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+
+  & main {
+    padding: 0;
+  }
 }
