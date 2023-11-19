@@ -458,14 +458,41 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  & h5 {
+    color: var(--white);
+    font-family: var(--barlow-condensed);
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 0.29531rem;
+    margin-bottom: 5rem;
+
+    & span {
+      font-weight: 700;
+      opacity: 0.25;
+    }
+  }
 }
 
 .main-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0;
+}
 
-  & main {
-    padding: 0;
+aside ul {
+  list-style: none;
+
+  & li {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* width: 5rem;
+    height: 5rem; */
+    padding: 3rem;
+    border-radius: 50%;
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
   }
 }
