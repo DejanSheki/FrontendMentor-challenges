@@ -456,8 +456,15 @@ main {
   height: 90vh;
   margin: 0 auto;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 3rem;
+
+  & .heading-space {
+    display: flex;
+    width: 76%;
+  }
 
   & h5 {
     color: var(--white);
@@ -465,7 +472,6 @@ main {
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 0.29531rem;
-    margin-bottom: 5rem;
 
     & span {
       font-weight: 700;
@@ -476,15 +482,21 @@ main {
 
 .main-container {
   display: flex;
-  justify-content: space-evenly;
-  padding: 0;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 .technology-list {
-  flex: 0 0 20%;
+  flex: 0 0 18%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.4rem;
 
   & ul {
     list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
 
     & button {
       border: 1px solid rgba(255, 255, 255, 0.25);
@@ -509,4 +521,38 @@ main {
       background: var(--white);
     }
   }
+}
+
+.technology-content {
+  flex: 0 0 45%;
+  padding-inline: 3rem 5rem;
+
+  & h6 {
+    color: var(--light-gray);
+    font-family: var(--barlow-condensed);
+    font-weight: 400;
+    letter-spacing: 0.16875rem;
+  }
+
+  & h1 {
+    color: var(--white);
+    font-family: var(--bellefair);
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-block: 0.4rem 1rem;
+  }
+
+  & p {
+    color: var(--light-gray);
+    font-family: var(--barlow);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-right: 3rem;
+  }
+}
+
+.technology-container {
+  flex: 0 0 40%;
+  padding-left: 2rem;
 }
