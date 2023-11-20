@@ -4,7 +4,7 @@
   --barlow: "Barlow", sans-serif;
   --barlow-condensed: "Barlow Condensed", sans-serif;
   --bellefair: "Bellefair", serif;
-  --dark-blue: hsl(230, 35%, 7%);
+  --dark-blue: rgb(13, 14, 23);
   --light-gray: rgb(208, 214, 249);
   --white: rgb(255, 255, 255);
 }
@@ -476,23 +476,37 @@ main {
 
 .main-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0;
 }
 
-aside ul {
-  list-style: none;
+.technology-list {
+  flex: 0 0 20%;
 
-  & li {
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    /* width: 5rem;
-    height: 5rem; */
-    padding: 3rem;
-    border-radius: 50%;
-    color: var(--white);
-    font-family: var(--bellefair);
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 0.125rem;
+  & ul {
+    list-style: none;
+
+    & button {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      width: 5rem;
+      height: 5rem;
+      background: transparent;
+      border-radius: 50%;
+      color: var(--white);
+      font-family: var(--bellefair);
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.125rem;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid var(--white);
+      }
+    }
+
+    & .active-btn {
+      color: #0b0d17;
+      background: var(--white);
+    }
   }
 }
