@@ -818,7 +818,7 @@ main {
     }
   }
 }
-
+/* 
 @media (max-width: 480px) {
   .hamburger {
     display: block;
@@ -828,5 +828,10 @@ main {
   }
   .menu {
     display: none;
+    width: 100%;
+    z-index: 2;
+    & ul {
+      flex-direction: column;
+    }
   }
-}
+} */

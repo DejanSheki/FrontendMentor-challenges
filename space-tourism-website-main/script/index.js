@@ -1,9 +1,14 @@
 const explore = document.querySelector('.oval a');
 const shadow = document.querySelector('.oval');
 const menuElement = document.querySelectorAll('.menu ul li a');
-const hamburger = document.querySelectorAll('.hamburger img');
+// const hamburger = document.querySelectorAll('.hamburger img');
+// const menu = document.querySelector('.menu');
 
-
+// hamburger.forEach(element => {
+//     element.addEventListener('click', () => {
+//         menu.style.display = 'flex';
+//     });
+// });
 
 document.addEventListener("DOMContentLoaded", (e) => {
     menuElement.forEach(link => {
