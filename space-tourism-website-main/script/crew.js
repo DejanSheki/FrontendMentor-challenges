@@ -26,16 +26,11 @@ async function fetchData(crewDesc = 0) {
 fetchData();
 
 crewList.forEach(item => {
-    item.addEventListener('click', (e) => {
-        const crewDesc = e.target.value;
-        fetchData(crewDesc);
-    });
-});
-
-crewList.forEach(navElement => {
-    navElement.addEventListener('click', ({ target }) => {
+    item.addEventListener('click', ({ target }) => {
+        const crewDesc = target.value;
         for (const item of crewList) {
             item.classList.toggle('li-active', target === item);
         }
+        fetchData(crewDesc);
     });
 });

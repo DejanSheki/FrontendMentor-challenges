@@ -31,11 +31,11 @@ async function fetchData(terminology = 0) {
 fetchData()
 
 btnList.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        console.log(btn);
-        const terminology = e.target.value;
-
-        btn.classList.toggle('active-btn');
+    btn.addEventListener('click', ({ target }) => {
+        const terminology = target.value;
+        for (const btn of btnList) {
+            btn.classList.toggle('active-btn', target === btn);
+        }
         fetchData(terminology);
     });
 });

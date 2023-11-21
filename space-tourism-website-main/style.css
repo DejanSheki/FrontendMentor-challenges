@@ -509,8 +509,9 @@ main {
       font-family: var(--bellefair);
       font-size: 2rem;
       font-weight: 400;
-      letter-spacing: 0.125rem;
+      /* letter-spacing: 0.125rem; */
       cursor: pointer;
+      transition: all 0.5s ease-in;
 
       &:hover {
         border: 1px solid var(--white);
