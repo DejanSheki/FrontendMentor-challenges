@@ -21,8 +21,13 @@ async function fetchData(terminology = 0) {
     technologyContent.appendChild(div);
 
     const image = new Image();
-    image.src = technologyData[terminology].images.portrait;
-    image.alt = technologyData[terminology].name;
+    if (window.screen.width <= 1024) {
+        image.src = technologyData[terminology].images.landscape;
+        image.alt = technologyData[terminology].name;
+    } else {
+        image.src = technologyData[terminology].images.portrait;
+        image.alt = technologyData[terminology].name;
+    }
 
     technologyContainer.appendChild(image);
 

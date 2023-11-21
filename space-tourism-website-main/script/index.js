@@ -1,6 +1,9 @@
 const explore = document.querySelector('.oval a');
 const shadow = document.querySelector('.oval');
 const menuElement = document.querySelectorAll('.menu ul li a');
+const hamburger = document.querySelectorAll('.hamburger img');
+
+
 
 document.addEventListener("DOMContentLoaded", (e) => {
     menuElement.forEach(link => {
