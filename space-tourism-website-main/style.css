@@ -363,7 +363,6 @@ main {
       & .distance h3,
       .time h3 {
         color: #fff;
-
         font-family: var(--bellefair);
         font-size: 1.75rem;
         font-weight: 400;
