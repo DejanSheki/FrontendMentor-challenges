@@ -82,7 +82,7 @@ nav {
     }
   }
 
-  .hover-line,
+  & .hover-line,
   .active-line {
     width: 0%;
     height: 3px;
@@ -92,18 +92,38 @@ nav {
     transition: all ease 0.4s;
   }
 
-  .hovered {
+  & .hovered {
     width: 100%;
   }
 
-  .active {
+  & .active {
     background: var(--white);
     width: 100%;
   }
 }
 
 .hamburger {
+  cursor: pointer;
   display: none;
+  & .bar {
+    width: 20px;
+    height: 2px;
+    background: var(--light-gray);
+    margin-block: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+.hamburger-open .bar:nth-child(1) {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(45deg) translate(6.5px, 6px);
+}
+.hamburger-open .bar:nth-child(2) {
+  /* opacity: 0; */
+  width: 0%;
+}
+.hamburger-open .bar:nth-child(3) {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
 }
 
 main {
@@ -595,7 +615,7 @@ main {
     display: none;
   }
   .menu {
-    max-width: 600px;
+    max-width: 470px;
     padding: 1.75rem 2rem;
     & ul {
       gap: 2rem;
@@ -818,20 +838,68 @@ main {
     }
   }
 }
-/* 
+
 @media (max-width: 480px) {
   .hamburger {
     display: block;
   }
   nav {
     padding: 1.5rem;
+    align-items: flex-start;
   }
   .menu {
+    width: 70%;
     display: none;
-    width: 100%;
-    z-index: 2;
+    animation: 0.5s linear hamburgerAnim;
     & ul {
       flex-direction: column;
     }
+    .hover-line {
+      display: none;
+    }
   }
-} */
+  .display {
+    display: flex;
+  }
+  .container {
+    background-image: url("./assets/home/background-home-mobile.jpg");
+  }
+  .content {
+    margin-top: 0;
+    & h5 {
+      font-size: 1rem;
+      letter-spacing: 0.16875rem;
+    }
+    & h1 {
+      font-size: 5rem;
+      line-height: 6.25rem;
+    }
+    & p {
+      font-size: 0.9375rem;
+      padding: 0;
+      width: 20rem;
+      line-height: 1.5625rem;
+    }
+  }
+  .oval-container .oval {
+    width: 9.375rem;
+    height: 9.375rem;
+    & a {
+      font-size: 1.25rem;
+      letter-spacing: 0.07813rem;
+      margin-top: 10px;
+    }
+  }
+}
+
+@keyframes hamburgerAnim {
+  0% {
+    rotate: x 90deg;
+  }
+  50% {
+    rotate: x 45deg;
+  }
+  100% {
+    rotate: x 0deg;
+  }
+}
