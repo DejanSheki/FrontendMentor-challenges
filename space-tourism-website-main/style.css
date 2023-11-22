@@ -890,6 +890,129 @@ main {
       margin-top: 10px;
     }
   }
+  .destination {
+    background-image: url("./assets/destination/background-destination-mobile.jpg");
+  }
+  .destination-main {
+    padding: 1rem;
+  }
+  .destination-container {
+    align-items: center;
+    & h5 {
+      font-size: 1rem;
+      letter-spacing: 0.16875rem;
+      margin-right: 0;
+    }
+  }
+  .destination-content {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    & .destination-list ul li {
+      font-size: 0.875rem;
+      letter-spacing: 0.14763rem;
+    }
+    .destination-description div:nth-child(1) {
+      & h1 {
+        font-size: 3.5rem;
+      }
+      & .p-height {
+        width: 20.4375rem;
+      }
+      & p {
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+      }
+      & .distance-time {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        & p {
+          font-size: 0.875rem;
+          letter-spacing: 0.14763rem;
+        }
+        & h3 {
+          font-size: 1.75rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .crew {
+    background-image: url("./assets/crew/background-crew-mobile.jpg");
+  }
+  .crew-main {
+    padding-top: 1rem;
+  }
+  .crew-content {
+    align-items: center;
+    justify-content: center;
+    & .details {
+      margin-top: 2rem;
+    }
+    & h5 {
+      font-size: 1rem;
+      letter-spacing: 0.16875rem;
+    }
+    & h2 {
+      font-size: 1rem;
+    }
+    & h1 {
+      font-size: 1.5rem;
+      margin-block: 1rem 1.5rem;
+    }
+    & p {
+      font-size: 0.9375rem;
+      line-height: 1.5625rem;
+    }
+    & ul {
+      align-items: center;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+  }
+  .crew-container {
+    max-width: 100%;
+  }
+  .technology {
+    background-image: url("./assets/technology/background-technology-mobile.jpg");
+  }
+  .technology-main {
+    margin-top: 1rem;
+    & .heading-space {
+      justify-content: center;
+      & h5 {
+        font-size: 1rem;
+        letter-spacing: 0.16875rem;
+      }
+    }
+  }
+  .main-container {
+    margin-top: 2rem;
+  }
+  .technology-list {
+    margin-block: 2rem;
+    & ul button {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1rem;
+      padding-top: 0;
+    }
+  }
+  .technology-content {
+    & h6 {
+      font-size: 0.875rem;
+      letter-spacing: 0.14763rem;
+    }
+    & h1 {
+      font-size: 1.5rem;
+    }
+    & p {
+      font-size: 0.9375rem;
+      line-height: 1.5625rem;
+      max-width: 20.4375rem;
+    }
+  }
 }
 
 @keyframes hamburgerAnim {
