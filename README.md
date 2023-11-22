@@ -1,3 +1,10 @@
+11. Space tourism website
+
+![](./space-tourism-website-main/assets/shared/screenshot.png)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/space-tourism-website-main)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/space-tourism-website-main/)
+
 10. Time tracking dashboard
 
 ![](./time-tracking-dashboard-main/images/screenshot.png)
