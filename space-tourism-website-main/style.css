@@ -692,7 +692,7 @@ main {
       justify-content: center;
       margin-block: 3rem;
     }
-    img {
+    & img {
       width: 45%;
       margin: 0;
     }
