@@ -1,11 +1,13 @@
-11. Space tourism website
+11. <h2>Space tourism website</h2>
 
 ![](./space-tourism-website-main/assets/shared/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/space-tourism-website-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/space-tourism-website-main/)
 
-10. Time tracking dashboard
+<hr>
+
+10. <h2>Time tracking dashboard</h2>
 
 ![](./time-tracking-dashboard-main/images/screenshot.png)
 
