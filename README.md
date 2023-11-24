@@ -1,4 +1,4 @@
-11. ##Space tourism website
+11. <h2>Space tourism website</h2>
 
 ![](./space-tourism-website-main/assets/shared/screenshot.png)
 
@@ -6,77 +6,107 @@
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/space-tourism-website-main/)
 
 <hr>
+<br>
 
-10. ##Time tracking dashboard
+10. <h2>Time tracking dashboard</h2>
 
 ![](./time-tracking-dashboard-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/time-tracking-dashboard-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/time-tracking-dashboard-main/)
 
-9. Ping coming soon page
+<hr>
+<br>
+
+9. <h2>Ping coming soon page</h2>
 
 ![](./ping-coming-soon-page-master/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/ping-coming-soon-page-master)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/ping-coming-soon-page-master/)
 
-8. Newsletter Sign Up With Success Message
+<hr>
+<br>
+
+8. <h2>Newsletter Sign Up With Success Message</h2>
 
 ![](./newsletter-sign-up-with-success-message-main/assets/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/newsletter-sign-up-with-success-message-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/newsletter-sign-up-with-success-message-main/)
 
-7. Interactive rating component
+<hr>
+<br>
+
+7. <h2>Interactive rating component</h2>
 
 ![](./interactive-rating-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/interactive-rating-component-main)
-
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-rating-component-main)
 
-6. Interactive pricing component
+<hr>
+<br>
+
+6. <h2>Interactive pricing component</h2>
 
 ![](./interactive-pricing-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/interactive-pricing-component-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/interactive-pricing-component-main/)
 
-5. Chat app css illustration
+<hr>
+<br>
+
+5. <h2>Chat app css illustration</h2>
 
 ![](./chat-app-css-illustration-master/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/chat-app-css-illustration-master)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/chat-app-css-illustration-master/)
 
-4. Huddle landing page with alternating feature blocks master
+<hr>
+<br>
+
+4. <h2>Huddle landing page with alternating feature blocks master</h2>
 
 ![](./huddle-landing-page-with-alternating-feature-blocks-master/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/huddle-landing-page-with-alternating-feature-blocks-master)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/huddle-landing-page-with-alternating-feature-blocks-master/)
 
-3. 3 Column Preview Card Component
+<hr>
+<br>
+
+3. <h2>3 Column Preview Card Component</h2>
 
 ![](./3-column-preview-card-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/3-column-preview-card-component-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/3-column-preview-card-component-main/)
 
-2. Testimonials grid section
+<hr>
+<br>
+
+2. <h2>Testimonials grid section</h2>
 
 ![](./testimonials-grid-section-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/testimonials-grid-section-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/testimonials-grid-section-main/)
 
-1. Order summary component
+<hr>
+<br>
+
+1. <h2>Order summary component</h2>
 
 ![](./order-summary-component-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/order-summary-component-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/order-summary-component-main/)
+
+<hr>
+<br>
 
 ## Author
 
