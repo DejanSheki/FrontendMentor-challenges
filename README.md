@@ -1,4 +1,4 @@
-11. <h1 style="text-decoration:none; color:blue">Space tourism website</h1>
+11. <h1 style="color:blue">Space tourism website</h1>
 
 ![](./space-tourism-website-main/assets/shared/screenshot.png)
 
