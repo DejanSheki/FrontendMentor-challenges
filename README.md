@@ -1,4 +1,4 @@
-11. <h2>Space tourism website</h2>
+11. <h1>Space tourism website</h1>
 
 ![](./space-tourism-website-main/assets/shared/screenshot.png)
 
