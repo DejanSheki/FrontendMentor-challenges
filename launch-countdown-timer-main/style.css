@@ -61,15 +61,15 @@ section {
 .card-top {
   overflow: hidden;
   position: relative;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
 }
 
 @keyframes flop {
-  0% {
+  from {
     rotate: x 0deg;
     z-index: 0;
   }
-  100% {
+  to {
     rotate: x 180deg;
     z-index: 1;
   }
@@ -80,6 +80,7 @@ section {
   font-size: 6.5rem;
   font-weight: 700;
   color: var(--soft-red);
+  backface-visibility: hidden;
 }
 .card-top,
 .flop {
