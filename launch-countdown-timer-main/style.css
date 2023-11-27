@@ -7,9 +7,9 @@
   --white: hsl(0, 0%, 100%);
   --dark-desaturate-blue: rgb(52, 54, 80);
   --very-dark-blue: rgb(30, 31, 41);
-  --darkest-blue: rgb(26, 26, 36);
-  --violet: #231b2b;
-  --light-violet: #261d31;
+  --darkest-blue: rgb(26, 26, 35);
+  --violet: #211d2b;
+  --light-violet: #241e2c;
 }
 
 * {
@@ -53,47 +53,103 @@ header h1 {
 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1.1rem;
+  text-align: center;
 }
 
 .card-bottom,
 .card-top {
   overflow: hidden;
   position: relative;
+  backface-visibility: hidden;
+}
+
+@keyframes flop {
+  0% {
+    rotate: x 0deg;
+    z-index: 0;
+  }
+  100% {
+    rotate: x 180deg;
+    z-index: 1;
+  }
 }
 
 .card-bottom p,
 .card-top p {
-  font-size: 8rem;
+  font-size: 6.5rem;
   font-weight: 700;
   color: var(--soft-red);
 }
-.card-top {
-  width: 150px;
-  height: 100px;
-  border-radius: 0.5rem 0.5rem 0 0;
-  background: rgb(37, 31, 48);
-  margin-bottom: 1px;
+.card-top,
+.flop {
+  width: 173px;
+  height: 78px;
+  border-radius: 0.7rem 0.7rem 0 0;
+  background: hsl(240, 21%, 22%);
 }
+
+.flop {
+  position: fixed;
+  top: 93px;
+  animation: flop 1s infinite;
+  transform-origin: bottom;
+}
+.line {
+  width: 173px;
+  height: 1px;
+  background: rgba(59, 49, 81, 0.37);
+  position: absolute;
+  z-index: 1;
+}
+.line::before,
+.line::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 14px;
+  background: var(--darkest-blue);
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  top: -7px;
+}
+.line::after {
+  border-radius: 10px 0 0 10px;
+  left: 167px;
+  top: -21px;
+}
+
 .card-bottom {
-  width: 150px;
-  height: 100px;
-  border-radius: 0 0 0.5rem 0.5rem;
+  width: 173px;
+  height: 78px;
+  border-radius: 0 0 0.7rem 0.7rem;
   background: var(--dark-desaturate-blue);
+  box-shadow: 0 13px var(--darkest-blue);
 }
 
 .card-top .fixed-numbers {
   position: absolute;
-  bottom: -72px;
+  bottom: -59px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  opacity: 0.8;
 }
 
 .card-bottom .fixed-numbers {
   position: absolute;
-  top: -72px;
+  top: -59px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+.period {
+  padding: 2rem;
+}
+.period p {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-weight: 700;
 }
