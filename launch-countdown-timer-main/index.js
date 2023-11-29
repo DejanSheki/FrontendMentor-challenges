@@ -26,6 +26,7 @@ var x = setInterval(function () {
     document.getElementById("demo").innerHTML = seconds
     document.getElementById("demo-bottom").innerHTML = seconds
     document.getElementById("demo-center").innerHTML = seconds
+    document.querySelector('.flop').classList.add('flop-anim');
 
     // If the count down is over, write some text 
     if (distance < 0) {

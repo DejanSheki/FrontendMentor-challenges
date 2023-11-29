@@ -57,6 +57,10 @@ section {
   text-align: center;
 }
 
+.card {
+  position: relative;
+}
+
 .card-bottom,
 .card-top {
   overflow: hidden;
@@ -91,11 +95,15 @@ section {
 }
 
 .flop {
-  position: fixed;
-  top: 93px;
-  animation: flop 1s infinite;
+  position: absolute;
+  top: 0;
   transform-origin: bottom;
 }
+
+.flop-anim {
+  animation: flop 1s infinite;
+}
+
 .line {
   width: 173px;
   height: 1px;
