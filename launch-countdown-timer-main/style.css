@@ -62,46 +62,58 @@ section {
 }
 
 .card-bottom,
-.card-top {
+.card-top,
+.card-top-back {
+  width: 173px;
+  height: 78px;
   overflow: hidden;
   position: relative;
-  /* backface-visibility: hidden; */
 }
 
-@keyframes flop {
-  from {
-    rotate: x 0deg;
-    z-index: 0;
+.card-top {
+  border-radius: 0.7rem 0.7rem 0 0;
+  background: hsl(240, 21%, 22%);
+  animation: flip-top 250ms ease-out 250ms;
+  transform-origin: bottom;
+  rotate: x 0deg;
+}
+.card-top-back {
+  border-radius: 0.7rem 0.7rem 0 0;
+  background: hsl(240, 21%, 22%);
+  position: absolute;
+  top: 0px;
+  transform-origin: bottom;
+  rotate: x 90deg;
+  z-index: 2;
+  animation: flip-top-back 250ms ease-out 500ms;
+}
+
+.card-bottom {
+  border-radius: 0 0 0.7rem 0.7rem;
+  background: var(--dark-desaturate-blue);
+  box-shadow: 0 13px var(--darkest-blue);
+  rotate: x 0deg;
+}
+
+@keyframes flip-top {
+  100% {
+    rotate: x 90deg;
   }
-  to {
+}
+
+@keyframes flip-top-back {
+  100% {
     rotate: x 180deg;
-    z-index: 1;
+    z-index: 0;
   }
 }
 
 .card-bottom p,
-.card-top p {
+.card-top p,
+.card-top-back p {
   font-size: 6.5rem;
   font-weight: 700;
   color: var(--soft-red);
-  backface-visibility: hidden;
-}
-.card-top,
-.flop {
-  width: 173px;
-  height: 78px;
-  border-radius: 0.7rem 0.7rem 0 0;
-  background: hsl(240, 21%, 22%);
-}
-
-.flop {
-  position: absolute;
-  top: 0;
-  transform-origin: bottom;
-}
-
-.flop-anim {
-  animation: flop 1s infinite;
 }
 
 .line {
@@ -128,14 +140,6 @@ section {
   top: -21px;
 }
 
-.card-bottom {
-  width: 173px;
-  height: 78px;
-  border-radius: 0 0 0.7rem 0.7rem;
-  background: var(--dark-desaturate-blue);
-  box-shadow: 0 13px var(--darkest-blue);
-}
-
 .card-top .fixed-numbers {
   position: absolute;
   bottom: -59px;
@@ -152,6 +156,16 @@ section {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+.card-top-back .fixed-numbers {
+  position: absolute;
+  bottom: -59px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  rotate: x 180deg;
+}
+
 .period {
   padding: 2rem;
 }
