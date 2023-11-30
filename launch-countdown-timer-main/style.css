@@ -63,19 +63,30 @@ section {
 
 .card-bottom,
 .card-top,
-.card-top-back {
+.card-top-back,
+.card-top-fixed {
   width: 173px;
   height: 78px;
   overflow: hidden;
   position: relative;
 }
 
-.card-top {
+.card-top,
+.card-top-fixed {
   border-radius: 0.7rem 0.7rem 0 0;
   background: hsl(240, 21%, 22%);
-  animation: flip-top 250ms ease-out 250ms;
   transform-origin: bottom;
   rotate: x 0deg;
+}
+
+.flip-top {
+  animation: flip-top 1s ease-out infinite;
+  z-index: 1;
+}
+.card-top-fixed {
+  position: absolute;
+  top: 0;
+  z-index: 0;
 }
 .card-top-back {
   border-radius: 0.7rem 0.7rem 0 0;
@@ -84,8 +95,11 @@ section {
   top: 0px;
   transform-origin: bottom;
   rotate: x 90deg;
-  z-index: 2;
-  animation: flip-top-back 250ms ease-out 500ms;
+  z-index: 1;
+}
+
+.flip-top-back {
+  animation: flip-top-back 1s ease-out 0.9s infinite;
 }
 
 .card-bottom {
@@ -110,7 +124,8 @@ section {
 
 .card-bottom p,
 .card-top p,
-.card-top-back p {
+.card-top-back p,
+.card-top-fixed p {
   font-size: 6.5rem;
   font-weight: 700;
   color: var(--soft-red);
@@ -152,6 +167,14 @@ section {
 .card-bottom .fixed-numbers {
   position: absolute;
   top: -59px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.card-top-fixed .fixed-numbers {
+  position: absolute;
+  top: 19px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
