@@ -76,15 +76,10 @@ section {
   rotate: x 0deg;
 }
 
-.flip-top {
-  animation: flip-top 1s ease-out infinite;
-  z-index: 1;
-  border-top: 1px solid hsla(240, 19%, 31%, 0.9);
-}
 .card-top-fixed {
   position: absolute;
   top: 0;
-  z-index: 1;
+  /* z-index: 0; */
 }
 .card-top-back {
   border-radius: 0.7rem 0.7rem 0 0;
@@ -96,28 +91,11 @@ section {
   z-index: 1;
 }
 
-.flip-top-back {
-  animation: flip-top-back 1s ease-out 1s infinite;
-}
-
 .card-bottom {
   border-radius: 0 0 0.7rem 0.7rem;
   background: var(--dark-desaturate-blue);
   box-shadow: 0 13px var(--darkest-blue);
   rotate: x 0deg;
-}
-
-@keyframes flip-top {
-  100% {
-    rotate: x 90deg;
-  }
-}
-
-@keyframes flip-top-back {
-  100% {
-    rotate: x 180deg;
-    z-index: 0;
-  }
 }
 
 .card-bottom p,
