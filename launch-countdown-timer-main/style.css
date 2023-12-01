@@ -55,9 +55,6 @@ section {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.1rem;
   text-align: center;
-}
-
-.card {
   position: relative;
 }
 
@@ -82,11 +79,12 @@ section {
 .flip-top {
   animation: flip-top 1s ease-out infinite;
   z-index: 1;
+  border-top: 1px solid hsla(240, 19%, 31%, 0.9);
 }
 .card-top-fixed {
   position: absolute;
   top: 0;
-  z-index: 0;
+  z-index: 1;
 }
 .card-top-back {
   border-radius: 0.7rem 0.7rem 0 0;
@@ -99,7 +97,7 @@ section {
 }
 
 .flip-top-back {
-  animation: flip-top-back 1s ease-out 0.9s infinite;
+  animation: flip-top-back 1s ease-out 1s infinite;
 }
 
 .card-bottom {
