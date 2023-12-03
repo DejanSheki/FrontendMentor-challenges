@@ -1,13 +1,3 @@
-13. <h2>Launch countdown timer</h2>
-
-![](./launch-countdown-timer-main/design/desktop-preview.jpg)
-
-- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/launch-countdown-timer-main)
-- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/launch-countdown-timer-main/)
-
-<hr>
-<br
-
 12. <h2>Launch countdown timer</h2>
 
 ![](./launch-countdown-timer-main/design/desktop-preview.jpg)
@@ -16,7 +6,7 @@
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/launch-countdown-timer-main/)
 
 <hr>
-<br
+<br>
 
 11. <h2>Space tourism website</h2>
 
