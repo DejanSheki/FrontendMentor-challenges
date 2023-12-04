@@ -2,7 +2,7 @@ const days = document.querySelector('.days');
 const hours = document.querySelector('.hours');
 const minutes = document.querySelector('.minutes');
 const seconds = document.querySelector('.seconds');
-
+console.log(seconds.childNodes[5]);
 
 const countDownDate = new Date().setDate(new Date().getDate() + 14);
 
@@ -25,7 +25,7 @@ setInterval(() => {
 
     seconds.childNodes[1].firstChild.textContent = sec;
     seconds.childNodes[3].firstChild.textContent = sec;
-    seconds.childNodes[5].firstChild.textContent = sec;
+    seconds.childNodes[5].firstElementChild.textContent = sec;
     seconds.childNodes[9].firstChild.textContent = sec;
 
 }, 1000);

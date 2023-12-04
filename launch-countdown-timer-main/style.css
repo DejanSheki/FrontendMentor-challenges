@@ -68,6 +68,18 @@ section {
   position: relative;
 }
 
+.card-top {
+  z-index: 1;
+  backface-visibility: hidden;
+  animation: flip-top 1s infinite ease;
+}
+
+@keyframes flip-top {
+  100% {
+    rotate: x 90deg;
+  }
+}
+
 .card-top,
 .card-top-fixed {
   border-radius: 0.7rem 0.7rem 0 0;
@@ -79,7 +91,7 @@ section {
 .card-top-fixed {
   position: absolute;
   top: 0;
-  /* z-index: 0; */
+  z-index: 0;
 }
 .card-top-back {
   border-radius: 0.7rem 0.7rem 0 0;
@@ -131,7 +143,8 @@ section {
   top: -21px;
 }
 
-.card-top .fixed-numbers {
+.card-top .fixed-numbers,
+.card-top-fixed .fixed-numbers {
   position: absolute;
   bottom: -59px;
   left: 50%;
