@@ -31,7 +31,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
   max-width: 1440px;
@@ -41,6 +41,10 @@ body {
     linear-gradient(var(--darkest-blue), var(--violet), var(--light-violet));
   background-repeat: no-repeat, no-repeat;
   background-position: center, bottom center, center;
+}
+
+header {
+  margin-top: 7rem;
 }
 
 header h1 {
@@ -201,4 +205,52 @@ footer {
 
 footer > div {
   margin: 2rem;
+}
+
+footer > div svg {
+  cursor: pointer;
+}
+
+footer > div svg:hover {
+  fill: var(--soft-red);
+}
+
+@media (max-width: 768px) {
+  section {
+    gap: 0.3rem;
+  }
+  .card-bottom,
+  .card-top,
+  .card-top-back,
+  .card-top-fixed {
+    width: 143px;
+    height: 58px;
+  }
+  .card-bottom p,
+  .card-top p,
+  .card-top-back p,
+  .card-top-fixed p {
+    font-size: 4.5rem;
+  }
+
+  .line {
+    width: 143px;
+  }
+  .line::after {
+    left: 135px;
+  }
+
+  .card-top .fixed-numbers,
+  .card-top-fixed .fixed-numbers {
+    bottom: -41px;
+  }
+  .card-bottom .fixed-numbers {
+    top: -41px;
+  }
+  .period {
+    padding: 1.3rem;
+  }
+  .period p {
+    font-size: 0.7rem;
+  }
 }
