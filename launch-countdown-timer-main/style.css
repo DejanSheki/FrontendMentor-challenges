@@ -71,12 +71,14 @@ section {
 .card-top {
   z-index: 1;
   backface-visibility: hidden;
-  animation: flip-top 1s infinite ease;
 }
-
+.animation {
+  animation: flip-top 350ms ease;
+}
 @keyframes flip-top {
   100% {
     rotate: x 90deg;
+    border-top: 1px solid var(--grayish-blue);
   }
 }
 
@@ -94,13 +96,14 @@ section {
   z-index: 0;
 }
 .card-top-back {
-  border-radius: 0.7rem 0.7rem 0 0;
-  background: hsl(240, 21%, 22%);
+  border-radius: 0 0 0.7rem 0.7rem;
+  background: var(--dark-desaturate-blue);
   position: absolute;
   top: 0px;
   transform-origin: bottom;
   rotate: x 90deg;
   z-index: 1;
+  border-top: 1px solid var(--grayish-blue);
 }
 
 .card-bottom {
