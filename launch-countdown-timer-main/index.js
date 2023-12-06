@@ -19,17 +19,17 @@ setInterval(() => {
 
     days.childNodes[1].firstChild.textContent = day;
     days.childNodes[3].firstChild.textContent = day;
-    days.childNodes[5].firstChild.textContent = day;
+    days.childNodes[5].firstElementChild.textContent = day;
     days.childNodes[9].firstChild.textContent = day;
 
     hours.childNodes[1].firstChild.textContent = hr;
     hours.childNodes[3].firstChild.textContent = hr;
-    hours.childNodes[5].firstChild.textContent = hr;
+    hours.childNodes[5].firstElementChild.textContent = hr;
     hours.childNodes[9].firstChild.textContent = hr;
 
     minutes.childNodes[1].firstChild.textContent = min;
     minutes.childNodes[3].firstChild.textContent = min;
-    minutes.childNodes[5].firstChild.textContent = min;
+    minutes.childNodes[5].firstElementChild.textContent = min;
     minutes.childNodes[9].firstChild.textContent = min;
 
     seconds.childNodes[1].firstChild.textContent = sec;

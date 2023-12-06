@@ -52,6 +52,7 @@ header h1 {
   font-size: 1.5rem;
   letter-spacing: 0.7rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 section {
@@ -124,6 +125,7 @@ section {
   font-size: 6.5rem;
   font-weight: 700;
   color: var(--soft-red);
+  font-variant-numeric: tabular-nums;
 }
 
 .line {
@@ -223,34 +225,41 @@ footer > div svg:hover {
   .card-top,
   .card-top-back,
   .card-top-fixed {
-    width: 143px;
+    width: 90px;
     height: 58px;
   }
   .card-bottom p,
   .card-top p,
   .card-top-back p,
   .card-top-fixed p {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   .line {
-    width: 143px;
+    width: 90px;
   }
   .line::after {
-    left: 135px;
+    left: 82px;
   }
 
   .card-top .fixed-numbers,
   .card-top-fixed .fixed-numbers {
-    bottom: -41px;
+    bottom: -32px;
+  }
+  .card-top-fixed .fixed-numbers {
+    top: 26px;
   }
   .card-bottom .fixed-numbers {
-    top: -41px;
+    top: -32px;
+  }
+  .card-top-back .fixed-numbers {
+    bottom: -31px;
   }
   .period {
-    padding: 1.3rem;
+    padding: 1rem 0.5rem;
   }
   .period p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
   }
 }
