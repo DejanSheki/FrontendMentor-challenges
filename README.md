@@ -1,6 +1,6 @@
 12. <h2>Launch countdown timer</h2>
 
-![](./launch-countdown-timer-main/design/desktop-preview.jpg)
+![](./launch-countdown-timer-main/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/launch-countdown-timer-main)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/launch-countdown-timer-main/)
