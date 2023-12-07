@@ -17,7 +17,6 @@ Your users should be able to:
 ### Screenshot
 
 ![](./images/screenshot.png)
-![](./images/screenshot1.png)
 
 ### Built with
 
@@ -25,7 +24,6 @@ Your users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - JavaScript
 
 ### What I learned
@@ -44,6 +42,8 @@ element.addEventListener("animationend", () => {
   console.log("animation has ended");
 });
 ```
+
+The font-variant-numeric CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers.
 
 ```css
 font-variant-numeric: normal;
