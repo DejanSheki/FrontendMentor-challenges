@@ -14,18 +14,35 @@
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkBlueIntroBg: "hsl(217, 28%, 15%)",
+            },
+            maxWidt: {
+              "1440px": "1440px",
+            },
+          },
+        },
+      };
+    </script>
     <script
       src="https://kit.fontawesome.com/08f9c1c78e.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
+    <header
+      class="bg-darkBlueIntroBg max-w-[1440px] m-auto flex justify-between px-7 py-5"
+    >
       <div>
         <img src="./images/logo.svg" alt="Logo" />
       </div>
       <nav>
-        <ul>
+        <ul class="flex">
           <li>Features</li>
           <li>Team</li>
           <li>Sign In</li>
