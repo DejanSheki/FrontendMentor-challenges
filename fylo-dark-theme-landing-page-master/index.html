@@ -22,12 +22,20 @@
             colors: {
               darkBlueIntroBg: "hsl(217, 28%, 15%)",
               mainBg: "hsl(218, 28%, 13%)",
+              cyan: "hsl(176, 68%, 64%)",
+              testimonialsBg: "hsl(219, 30%, 18%)",
             },
             maxWidt: {
               "1440px": "1440px",
+              "26.5%": "26.5%",
+              "10%": "10%",
             },
             backgroundImage: {
               "hero-bg": "url('./images/bg-curvy-desktop.svg')",
+              "quotes-bg": "url('./images/bg-quotes.png')",
+            },
+            backgroundPosition: {
+              "top-left": "top 16.7% left 9.5%",
             },
             backgroundSize: {
               custom: "100% 270px",
@@ -136,25 +144,32 @@
     </main>
 
     <section
-      class="max-w-[1440px] m-auto bg-mainBg flex justify-center items-center"
+      class="max-w-[1440px] m-auto py-12 bg-mainBg flex justify-center items-center gap-8"
     >
-      <div class="w-1/2">
+      <div class="w-2/5 pr-5">
         <img
           src="./images/illustration-stay-productive.png"
           alt="Stay productive"
         />
       </div>
-      <div class="w-1/2">
-        <h3>Stay productive, wherever you are</h3>
-        <p>
+      <div class="w-2/5">
+        <h3 class="text-white text-4xl">
+          Stay productive,<br />
+          wherever you are
+        </h3>
+        <p
+          class="text-left text-white text-opacity-80 text-sm tracking-wide my-5"
+        >
           Never let location be an issue when accessing your files. Fylo has you
           covered for all of your file storage needs.
         </p>
-        <p>
+        <p
+          class="text-left text-white text-opacity-80 text-sm tracking-wide mb-5"
+        >
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required.
         </p>
-        <a href="#"
+        <a class="text-cyan" href="#"
           >See how Fylo works
           <img
             class="inline-block ml-1"
@@ -164,46 +179,72 @@
       </div>
     </section>
 
-    <section class="testimonials">
-      <div>
-        <p>
+    <section
+      class="flex justify-center items-center max-w-[1440px] mx-auto p-8 pt-20 bg-quotes-bg bg-no-repeat bg-mainBg bg-top-left gap-8"
+    >
+      <div class="w-[26.5%] bg-testimonialsBg rounded p-8">
+        <p
+          class="text-white text-opacity-80 tracking-wide text-sm text-left leading-tight mt-2 mb-5"
+        >
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
           machine.
         </p>
-        <div class="profile">
-          <img src="./images/profile-1.jpg" alt="Satish Patel" />
-          <div>
-            <h4>Satish Patel</h4>
-            <p>Founder &amp; CEO, Huddle</p>
+        <div class="flex items-center">
+          <img
+            class="rounded-full max-w-[10%]"
+            src="./images/profile-1.jpg"
+            alt="Satish Patel"
+          />
+          <div class="flex flex-col justify-center leading-tight ml-3">
+            <h4 class="text-white text-sm">Satish Patel</h4>
+            <p class="text-white text-opacity-80 tracking-wide text-xs">
+              Founder &amp; CEO, Huddle
+            </p>
           </div>
         </div>
       </div>
-      <div>
-        <p>
+      <div class="w-[26.5%] bg-testimonialsBg rounded p-8">
+        <p
+          class="text-white text-opacity-80 tracking-wide text-sm text-left leading-tight mt-2 mb-5"
+        >
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
           machine.
         </p>
-        <div class="profile">
-          <img src="./images/profile-2.jpg" alt="Iva Boyd" />
-          <div>
-            <h4>Bruce McKenzie</h4>
-            <p>Founder &amp; CEO, Huddle</p>
+        <div class="flex items-center">
+          <img
+            class="rounded-full max-w-[10%]"
+            src="./images/profile-2.jpg"
+            alt="Iva Boyd"
+          />
+          <div class="flex flex-col justify-center leading-tight ml-3">
+            <h4 class="text-white text-sm">Bruce McKenzie</h4>
+            <p class="text-white text-opacity-80 tracking-wide text-xs">
+              Founder &amp; CEO, Huddle
+            </p>
           </div>
         </div>
       </div>
-      <div>
-        <p>
+      <div class="w-[26.5%] bg-testimonialsBg rounded p-8">
+        <p
+          class="text-white text-opacity-80 tracking-wide text-sm text-left leading-tight mt-2 mb-5"
+        >
           Fylo has improved our team productivity by an order of magnitude.
           Since making the switch our team has become a well-oiled collaboration
           machine.
         </p>
-        <div class="profile">
-          <img src="./images/profile-3.jpg" alt="Iva Boyd" />
-          <div>
-            <h4>Iva Boyd</h4>
-            <p>Founder &amp; CEO, Huddle</p>
+        <div class="flex items-center">
+          <img
+            class="rounded-full max-w-[10%]"
+            src="./images/profile-3.jpg"
+            alt="Iva Boyd"
+          />
+          <div class="flex flex-col justify-center leading-tight ml-3">
+            <h4 class="text-white text-sm">Iva Boyd</h4>
+            <p class="text-white text-opacity-80 tracking-wide text-xs">
+              Founder &amp; CEO, Huddle
+            </p>
           </div>
         </div>
       </div>
