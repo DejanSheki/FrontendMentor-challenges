@@ -25,6 +25,7 @@
               cyan: "hsl(176, 68%, 64%)",
               "blue-custom": "hsl(198, 60%, 50%)",
               testimonialsBg: "hsl(219, 30%, 18%)",
+              footerBg: "hsl(216, 53%, 9%)",
             },
             maxWidt: {
               "1440px": "1440px",
@@ -252,38 +253,58 @@
     </section>
 
     <section
-      class="flex max-w-[1440px] h-80 m-auto bg-gradient-to-b from-cyan from-0% to-50% to-blue-custom from-50% to-100%"
+      class="flex justify-center items-center max-w-[1440px] h-[70vh] m-auto bg-gradient-to-t from-footerBg to-50% to-mainBg from-50%"
     >
-      <h2>Get early access today</h2>
-      <p>
-        It only takes a minute to sign up and our free starter tier is extremely
-        generous. If you have any questions, our support team would be happy to
-        help you.
-      </p>
-      <form action="#">
-        <input
-          type="email"
-          name="email"
-          aria-required="true"
-          aria-invalid="false"
-          aria-describedby="errmsg"
-          aria-label="emai"
-          placeholder="email@example.com"
-        />
-        <input type="submit" value="Get Started For Free" />
-        <span aria-hidden="true" id="errmsg"
-          >Please provide a valid email sddress</span
+      <div
+        class="flex flex-col justify-center items-center bg-darkBlueIntroBg py-10 px-10 rounded w-[55%]"
+      >
+        <h2 class="text-white text-3xl">Get early access today</h2>
+        <p
+          class="text-left text-white text-center text-opacity-80 text-sm tracking-wide my-5 px-4"
         >
-      </form>
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+        <form class="w-full" action="#">
+          <input
+            class="rounded-full py-2 px-5 w-4/6"
+            type="email"
+            name="email"
+            aria-required="true"
+            aria-invalid="false"
+            aria-describedby="errmsg"
+            aria-label="emai"
+            placeholder="email@example.com"
+          />
+          <input
+            class="text-white rounded-full ml-3 bg-gradient-to-r from-cyan to-blue-custom py-2 px-7"
+            type="submit"
+            value="Get Started For Free"
+          />
+          <span class="hidden" aria-hidden="true" id="errmsg"
+            >Please provide a valid email sddress</span
+          >
+        </form>
+      </div>
     </section>
 
-    <footer>
-      <div class="logo">
+    <footer
+      class="grid grid-cols-6 gap-y-5 gap-x-16 bg-footerBg max-w-[1440px] m-auto px-14"
+    >
+      <div class="col-span-6 ml-20">
         <img src="./images/logo.svg" alt="Logo" />
       </div>
-      <div class="location">
-        <img src="./images/icon-location.svg" alt="Location icon" />
-        <p>
+
+      <div class="col-span-2 flex items-start ml-20">
+        <img
+          class="mt-2 mr-5"
+          src="./images/icon-location.svg"
+          alt="Location icon"
+        />
+        <p
+          class="text-white text-opacity-80 tracking-wide text-sm text-left leading-tight"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
