@@ -82,7 +82,7 @@
           family, and co-workers.
         </p>
         <button
-          class="py-2 px-14 mt-7 text-white border-none rounded-full bg-gradient-to-r from-cyan to-blue-custom"
+          class="py-2 px-14 mt-7 text-white border-none rounded-full bg-gradient-to-r from-cyan to-blue-custom hover:from-cyan hover:to-cyan"
         >
           Get Started
         </button>
@@ -171,7 +171,9 @@
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required.
         </p>
-        <a class="text-cyan" href="#"
+        <a
+          class="text-cyan border-b border-cyan hover:text-white hover:border-white"
+          href="#"
           >See how Fylo works
           <img
             class="inline-block ml-1"
@@ -278,7 +280,7 @@
             placeholder="email@example.com"
           />
           <input
-            class="text-white rounded-full ml-3 bg-gradient-to-r from-cyan to-blue-custom py-2 px-7 cursor-pointer"
+            class="text-white rounded-full ml-3 bg-gradient-to-r from-cyan to-blue-custom py-2 px-7 cursor-pointer hover:from-cyan hover:to-cyan"
             type="submit"
             value="Get Started For Free"
           />
@@ -290,7 +292,7 @@
     </section>
 
     <footer
-      class="grid grid-cols-6 gap-y-5 gap-x-16 bg-footerBg max-w-[1440px] m-auto px-14"
+      class="grid grid-cols-6 gap-y-5 gap-x-16 bg-footerBg max-w-[1440px] m-auto px-14 pb-14"
     >
       <div class="col-span-6 ml-20">
         <img src="./images/logo.svg" alt="Logo" />
@@ -330,37 +332,69 @@
         >
       </div>
       <div
-        class="text-white text-opacity-80 tracking-wide text-sm text-left leading-tight justify-self-end"
+        class="text-white tracking-wide text-sm leading-tight justify-self-end"
       >
         <ul>
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
+          <li
+            class="mb-3 cursor-pointer text-white tracking-wide text-sm leading-tight text-opacity-80 hover:text-opacity-100"
+          >
+            About Us
+          </li>
+          <li
+            class="mb-3 cursor-pointer text-white tracking-wide text-sm leading-tight text-opacity-80 hover:text-opacity-100"
+          >
+            Jobs
+          </li>
+          <li
+            class="mb-3 cursor-pointer text-white tracking-wide text-sm leading-tight text-opacity-80 hover:text-opacity-100"
+          >
+            Press
+          </li>
+          <li
+            class="mb-3 cursor-pointer text-white tracking-wide text-sm leading-tight text-opacity-80 hover:text-opacity-100"
+          >
+            Blog
+          </li>
         </ul>
       </div>
-      <div
-        class="text-white text-opacity-80 tracking-wide text-sm text-left leading-tight"
-      >
+      <div class="justify-self-center">
         <ul>
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
+          <li
+            class="mb-3 cursor-pointer text-white tracking-wide text-sm leading-tight text-opacity-80 hover:text-opacity-100"
+          >
+            Contact Us
+          </li>
+          <li
+            class="mb-3 cursor-pointer text-white tracking-wide text-sm leading-tight text-opacity-80 hover:text-opacity-100"
+          >
+            Terms
+          </li>
+          <li
+            class="mb-3 cursor-pointer text-white tracking-wide text-sm leading-tight text-opacity-80 hover:text-opacity-100"
+          >
+            Privacy
+          </li>
         </ul>
       </div>
-      <div class="socials">
-        <ul>
-          <li>
+      <div>
+        <ul class="flex gap-4">
+          <li
+            class="w-3 h-3 p-4 border rounded-full border-white flex items-center justify-center cursor-pointer text-white hover:text-cyan hover:border-cyan"
+          >
             <a href="#" aria-label="facebook icon"
               ><i class="fab fa-facebook-f"></i
             ></a>
           </li>
-          <li>
+          <li
+            class="w-3 h-3 p-4 border rounded-full border-white flex items-center justify-center cursor-pointer text-white hover:text-cyan hover:border-cyan"
+          >
             <a href="#" aria-label="twitter icon"
               ><i class="fab fa-twitter"></i
             ></a>
           </li>
-          <li>
+          <li
+            class="w-3 h-3 p-4 border rounded-full border-white flex items-center justify-center cursor-pointer text-white hover:text-cyan hover:border-cyan"
+          >
             <a href="#" aria-label="instagram icon"
               ><i class="fab fa-instagram"></i
             ></a>
