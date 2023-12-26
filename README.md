@@ -1,6 +1,6 @@
 13. <h2>Fylo dark theme landing page</h2>
 
-![](./fylo-dark-theme-landing-page-master/design/desktop-design.jpg)
+![](./fylo-dark-theme-landing-page-master/images/screenshot.png)
 
 - Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/fylo-dark-theme-landing-page-master)
 - Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/fylo-dark-theme-landing-page-master/)
