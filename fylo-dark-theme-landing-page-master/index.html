@@ -14,11 +14,21 @@
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              raleway: ["Raleway", "sans-seri"],
+              "open-sans": ["Open Sans", "sans-serif"],
+            },
             colors: {
               darkBlueIntroBg: "hsl(217, 28%, 15%)",
               mainBg: "hsl(218, 28%, 13%)",
@@ -53,18 +63,20 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="font-open-sans">
     <header
       class="bg-darkBlueIntroBg max-w-[1440px] m-auto flex flex-col items-center justify-center px-8 py-7 bg-hero-bg bg-no-repeat bg-bottom bg-custom"
     >
-      <nav class="flex w-full justify-between px-10">
+      <nav class="flex w-full justify-between md:px-10">
         <div>
-          <img class="w-4/5" src="./images/logo.svg" alt="Logo" />
+          <img class="w-3/5 md:w-4/5" src="./images/logo.svg" alt="Logo" />
         </div>
-        <ul class="flex text-white gap-10 cursor-pointer">
-          <li>Features</li>
-          <li>Team</li>
-          <li>Sign In</li>
+        <ul
+          class="flex items-center text-white gap-3 md:gap-10 cursor-pointer font-raleway"
+        >
+          <li class="hover:underline underline-offset-8">Features</li>
+          <li class="hover:underline underline-offset-8">Team</li>
+          <li class="hover:underline underline-offset-8">Sign In</li>
         </ul>
       </nav>
 
@@ -74,7 +86,7 @@
         <div class="w-9/12">
           <img src="./images/illustration-intro.png" alt="Intro" />
         </div>
-        <h1 class="text-white text-3xl my-7 md:text-4xl">
+        <h1 class="text-white text-3xl my-7 md:text-4xl font-raleway font-bold">
           All your files in one secure location, <br />
           accessible anywhere.
         </h1>
@@ -84,7 +96,7 @@
           family, and co-workers.
         </p>
         <button
-          class="py-2 px-14 mt-7 text-white border-none rounded-full bg-gradient-to-r from-cyan to-blue-custom hover:from-cyan hover:to-cyan"
+          class="py-2 px-14 mt-7 text-white font-raleway font-bold border-none rounded-full bg-gradient-to-r from-cyan to-blue-custom hover:from-cyan hover:to-cyan"
         >
           Get Started
         </button>
@@ -103,7 +115,9 @@
             alt="Access anywhere icon"
           />
         </div>
-        <h2 class="text-white my-3 text-xl">Access your files, anywhere</h2>
+        <h2 class="text-white my-3 text-xl font-raleway font-bold">
+          Access your files, anywhere
+        </h2>
         <p class="text-center text-white text-opacity-80 text-sm tracking-wide">
           The ability to use a smartphone, tablet, or computer to access your
           account means your files follow you everywhere.
@@ -115,7 +129,9 @@
         <div>
           <img src="./images/icon-security.svg" alt="Security icon" />
         </div>
-        <h2 class="text-white my-3 text-xl">Security you can trust</h2>
+        <h2 class="text-white my-3 text-xl font-raleway font-bold">
+          Security you can trust
+        </h2>
         <p class="text-center text-white text-opacity-80 text-sm tracking-wide">
           2-factor authentication and user-controlled encryption are just a
           couple of the security features we allow to help secure your files.
@@ -127,7 +143,9 @@
         <div>
           <img src="./images/icon-collaboration.svg" alt="Collaboration icon" />
         </div>
-        <h2 class="text-white my-3 text-xl">Real-time collaboration</h2>
+        <h2 class="text-white my-3 text-xl font-raleway font-bold">
+          Real-time collaboration
+        </h2>
         <p class="text-center text-white text-opacity-80 text-sm tracking-wide">
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required.
@@ -139,7 +157,9 @@
         <div>
           <img src="./images/icon-any-file.svg" alt="Any file icon" />
         </div>
-        <h2 class="text-white my-3 text-xl">Store any type of file</h2>
+        <h2 class="text-white my-3 text-xl font-raleway font-bold">
+          Store any type of file
+        </h2>
         <p class="text-center text-white text-opacity-80 text-sm tracking-wide">
           Whether you're sharing holidays photos or work documents, Fylo has you
           covered allowing for all file types to be securely stored and shared.
@@ -157,7 +177,7 @@
         />
       </div>
       <div class="w-4/5 md:w-2/5">
-        <h3 class="text-white text-4xl">
+        <h3 class="text-white text-4xl font-raleway font-bold">
           Stay productive,<br />
           wherever you are
         </h3>
@@ -174,7 +194,7 @@
           for live collaboration. No email attachments required.
         </p>
         <a
-          class="text-cyan border-b border-cyan hover:text-white hover:border-white"
+          class="text-cyan border-b border-cyan hover:text-white font-raleway font-bold hover:border-white"
           href="#"
           >See how Fylo works
           <img
@@ -203,7 +223,7 @@
             alt="Satish Patel"
           />
           <div class="flex flex-col justify-center leading-tight ml-3">
-            <h4 class="text-white text-sm">Satish Patel</h4>
+            <strong class="text-white text-sm">Satish Patel</strong>
             <p class="text-white text-opacity-80 tracking-wide text-xs">
               Founder &amp; CEO, Huddle
             </p>
@@ -225,7 +245,7 @@
             alt="Iva Boyd"
           />
           <div class="flex flex-col justify-center leading-tight ml-3">
-            <h4 class="text-white text-sm">Bruce McKenzie</h4>
+            <strong class="text-white text-sm">Bruce McKenzie</strong>
             <p class="text-white text-opacity-80 tracking-wide text-xs">
               Founder &amp; CEO, Huddle
             </p>
@@ -247,7 +267,7 @@
             alt="Iva Boyd"
           />
           <div class="flex flex-col justify-center leading-tight ml-3">
-            <h4 class="text-white text-sm">Iva Boyd</h4>
+            <strong class="text-white text-sm">Iva Boyd</strong>
             <p class="text-white text-opacity-80 tracking-wide text-xs">
               Founder &amp; CEO, Huddle
             </p>
@@ -260,11 +280,13 @@
       class="flex justify-center items-center max-w-[1440px] h-[55vh] m-auto bg-gradient-to-t from-footerBg to-50% to-mainBg from-50%"
     >
       <div
-        class="flex flex-col justify-center items-center bg-darkBlueIntroBg pt-10 pb-5 px-10 rounded w-4/5 md:w-[55%]"
+        class="flex flex-col justify-center items-center bg-darkBlueIntroBg pt-10 pb-5 px-10 rounded w-4/5 md:w-3/5"
       >
-        <h2 class="text-white text-3xl">Get early access today</h2>
+        <h2 class="text-white text-3xl font-raleway font-bold">
+          Get early access today
+        </h2>
         <p
-          class="text-left text-white text-center text-opacity-80 text-sm tracking-wide my-5 px-4"
+          class="text-left text-white text-center text-opacity-80 text-sm tracking-wide my-5 px-8"
         >
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
@@ -282,7 +304,7 @@
             placeholder="email@example.com"
           />
           <input
-            class="text-white rounded-full w-full md:w-48 mt-5 md:mt-0 md:ml-3 bg-gradient-to-r from-cyan to-blue-custom py-2 px-7 cursor-pointer hover:from-cyan hover:to-cyan"
+            class="text-white font-raleway font-bold rounded-full w-full md:w-56 mt-5 md:mt-0 md:ml-3 bg-gradient-to-r from-cyan to-blue-custom py-2 px-7 cursor-pointer hover:from-cyan hover:to-cyan"
             type="submit"
             value="Get Started For Free"
           />
@@ -290,7 +312,7 @@
             class="invisible ml-10 mt-2 text-light-red block"
             aria-hidden="true"
             id="errmsg"
-            >Please provide a valid email sddress</span
+            >Please provide a valid email address</span
           >
         </form>
       </div>
