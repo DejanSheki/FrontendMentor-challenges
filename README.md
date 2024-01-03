@@ -1,4 +1,4 @@
-13. <h2>REST Countries API with color theme switcher</h2>
+14. <h2>REST Countries API with color theme switcher</h2>
 
 ![](./rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg)
 
