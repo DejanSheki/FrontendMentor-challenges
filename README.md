@@ -1,3 +1,13 @@
+13. <h2>REST Countries API with color theme switcher</h2>
+
+![](./rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg)
+
+- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/rest-countries-api-with-color-theme-switcher-master)
+- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/rest-countries-api-with-color-theme-switcher-master/)
+
+<hr>
+<br>
+
 13. <h2>Fylo dark theme landing page</h2>
 
 ![](./fylo-dark-theme-landing-page-master/images/screenshot.png)
