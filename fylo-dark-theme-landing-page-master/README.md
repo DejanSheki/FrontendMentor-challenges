@@ -35,7 +35,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Dejan Lukic](https://www.dejanlukic.com)
-- Frontend Mentor - [@DejanSheki](https://www.frontendmentor.io/profile/DejanSheki)
-- Twitter - [@DejanSheki](https://twitter.com/DejanSheki)
-- CSSBattle - [@dejansheki](https://cssbattle.dev/player/dejansheki)
+- [Website](https://www.dejanlukic.com)
+- [FrontendMentor](https://www.frontendmentor.io/profile/DejanSheki)
+- [Linkedin](https://www.linkedin.com/in/dejansheki/)
+- [Twitter](https://twitter.com/DejanSheki)
+- [CSSBattle](https://cssbattle.dev/player/dejansheki)

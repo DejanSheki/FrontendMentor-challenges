@@ -28,6 +28,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Dejan Lukic](https://dejanlukic.com)
-- Frontend Mentor - [@DejanSheki](https://www.frontendmentor.io/profile/DejanSheki)
-- Twitter - [@DejanSheki](https://www.twitter.com/DejanSheki)
+- [Website](https://www.dejanlukic.com)
+- [FrontendMentor](https://www.frontendmentor.io/profile/DejanSheki)
+- [Linkedin](https://www.linkedin.com/in/dejansheki/)
+- [Twitter](https://twitter.com/DejanSheki)
+- [CSSBattle](https://cssbattle.dev/player/dejansheki)

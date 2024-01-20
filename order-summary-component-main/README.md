@@ -20,6 +20,8 @@ Users should be able to:
 
 ## Author
 
-- Website - https://dejanlukic.com
-- Frontend Mentor - https://www.frontendmentor.io/profile/DejanSheki
-- Twitter - https://twitter.com/DejanWebDev
+- [Website](https://www.dejanlukic.com)
+- [FrontendMentor](https://www.frontendmentor.io/profile/DejanSheki)
+- [Linkedin](https://www.linkedin.com/in/dejansheki/)
+- [Twitter](https://twitter.com/DejanSheki)
+- [CSSBattle](https://cssbattle.dev/player/dejansheki)
