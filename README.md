@@ -1,9 +1,9 @@
 14. <h2>REST Countries API with color theme switcher</h2>
 
-![](./rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg)
+![](./rest-countries-api-with-color-theme-switcher-master/screenshot.png)
 
-- Solution URL: [Solution](https://github.com/DejanSheki/FrontendMentor-challenges/tree/main/rest-countries-api-with-color-theme-switcher-master)
-- Live Site URL: [Live Preview](https://dejansheki.github.io/FrontendMentor-challenges/rest-countries-api-with-color-theme-switcher-master/)
+- Solution URL: [Solution](https://github.com/DejanSheki/rest-countries-api-with-color-teme-switcher)
+- Live Site URL: [Live Preview](https://rest-countries-api-with-color-teme-switcher.vercel.app/)
 
 <hr>
 <br>
